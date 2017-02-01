@@ -23,7 +23,7 @@ const readFile = (fileName) => {
   })
 }
 
-router.get('/(index|resume)(.*)', async function resume(ctx, next) {
+router.get(['/', '/(index|resume)(.*)'], async function resume(ctx, next) {
   ctx.body = await readFile('/resume.html')
 })
 
