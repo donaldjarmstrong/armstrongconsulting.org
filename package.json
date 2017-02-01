@@ -1,0 +1,35 @@
+{
+  "name": "armstrongconsulting.org",
+  "version": "0.0.1",
+  "description": "Website for armstrong consulting",
+  "main": "index.js",
+  "engines": {
+    "node": ">=7.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --harmony-async-await index",
+    "dev": "nodemon --harmony-async-await index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/donaldjarmstrong/armstrongconsulting.org.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/donaldjarmstrong/armstrongconsulting.org/issues"
+  },
+  "homepage": "https://github.com/donaldjarmstrong/armstrongconsulting.org#readme",
+  "dependencies": {
+    "koa": "^2.0.0-alpha.7",
+    "koa-pino-logger": "^2.1.0",
+    "koa-router": "^5.4.0",
+    "nodemon": "^1.11.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0",
+    "standard": "^8.6.0"
+  }
+}
