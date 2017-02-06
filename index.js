@@ -27,6 +27,16 @@ router.get(['/', '/(index|resume)(.*)'], async function resume(ctx, next) {
   ctx.body = await readFile('/resume.html')
 })
 
+router.get('/robots.txt', async function robots(ctx, next) {
+  ctx.type = 'text/plain'
+  ctx.body = `User-agent: *\nDisallow: /`
+})
+
+// https://realfavicongenerator.net
+// https://realfavicongenerator.net/blog/favicon-why-youre-doing-it-wrong/
+// router.get('/favicon.ico', async function favicon(ctx, next) {
+// })
+
 app.use(async (ctx, next) => {
   try {
     await next()
