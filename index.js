@@ -1,6 +1,6 @@
 'use strict'
 
-const path = require("path")
+const path = require('path')
 const fs = require('fs')
 const pkg = require('./package')
 const Koa = require('koa')
@@ -23,11 +23,11 @@ const readFile = (fileName) => {
   })
 }
 
-router.get(['/', '/(index|resume)(.*)'], async function resume(ctx, next) {
+router.get(['/', '/(index|resume)(.*)'], async function resume (ctx, next) {
   ctx.body = await readFile('/resume.html')
 })
 
-router.get('/robots.txt', async function robots(ctx, next) {
+router.get('/robots.txt', async function robots (ctx, next) {
   ctx.type = 'text/plain'
   ctx.body = `User-agent: *\nDisallow: /`
 })
@@ -42,12 +42,12 @@ app.use(async (ctx, next) => {
     await next()
     const status = ctx.status || 404
     if (status === 404) {
-        ctx.throw(404)
+      ctx.throw(404)
     }
   } catch (err) {
     if (err.status === 404) {
       // 404 handler
-      ctx.status = 404;
+      ctx.status = 404
       ctx.body = await readFile('/404.html')
       return
     }
@@ -60,5 +60,5 @@ app.use(async (ctx, next) => {
 
 const port = process.env.PORT || 3000
 app.listen(port, () => {
-  console.log(`${pkg.name} v${pkg.version} listening on port ${port}`);
+  console.log(`${pkg.name} v${pkg.version} listening on port ${port}`)
 })
