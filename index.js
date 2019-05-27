@@ -5,6 +5,7 @@ const fs = require('fs')
 const pkg = require('./package')
 const Koa = require('koa')
 const Router = require('koa-router')
+const serve = require('koa-static')
 const logger = require('koa-pino-logger')()
 
 const app = new Koa()
@@ -13,6 +14,7 @@ const router = new Router()
 app.use(logger)
 app.use(router.routes())
 app.use(router.allowedMethods())
+app.use(serve('./artifacts'))
 
 const readFile = (fileName) => {
   return new Promise((resolve, reject) => {
