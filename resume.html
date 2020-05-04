@@ -26,6 +26,7 @@
         font-size: 9pt;
         line-height: 120%
       }
+
       a:visited {
         color: blue
       }
@@ -123,7 +124,7 @@
         <a href="http://www.armstrongconsulting.org">www.armstrongconsulting.org</a>
       </p>
       <p>
-          <a href="/DonaldArmstrongSinglePage.docx">Single Page</a> |
+        <a href="/DonaldArmstrongSinglePage.docx">Single Page</a> |
         <a href="https://github.com/donaldjarmstrong">GitHub</a> |
         <a href="https://twitter.com/mnhardcoder">Twitter</a> |
         <a href="https://www.linkedin.com/in/donniearmstrong">Linked In</a>
@@ -136,13 +137,19 @@
       </div>
       <div class="sectionbody">
         <p>
-          Senior/lead software engineer and product owner, specializing in breaking down ideas, coordinating cross-team execution, determining viability and learning whether to pivot or persevere.
+          Senior/lead software engineer, specializing in breaking down ideas, coordinating cross-team execution,
+          determining viability and learning whether to pivot or persevere.
         </p>
         <p>
-          I am an inquisitive person who enjoys solving hard problems, learning new domains, and creating systems that are manageable
-          and amenable to change. In order to help our team succeed, I find and remove obstacles, answer many smart questions,
-          and ask even more dumb ones. My experience culminates into a pattern recognition engine that favours guidance
-          over direction and leadership over control.
+          I am an inquisitive person who enjoys solving hard problems, learning new domains, and creating systems that
+          are manageable
+          and amenable to change. In order to help our team succeed, I find and remove obstacles, answer many smart
+          questions,
+          and ask even more dumb ones. My experience culminates into a pattern recognition engine that favors guidance
+          over discipline and leadership without excuses.
+        </p>
+        <p>
+          Think. Do. Learn.
         </p>
       </div>
     </div>
@@ -154,41 +161,79 @@
 
       <div class="sectionbody">
         <div class="jobdesc">
+          <span class="jobtitle">Senior Data Engineer</span>
+          <span class="employer">
+            <a href="https://www.spok.com/solutions/">Spok</a>
+          </span>
+          <div class="jobdates">July 2019 — </div>
+        </div>
+
+        <div class="jobdetails">
+          <p>
+            Developed a streaming data pipeline application using Python and SQL (<a
+              href="https://www.getdbt.com/">dbt</a>). The application is deployed to AWS utilizing Lambda, Kinesis, Glue,
+            Fargate and Aurora PostgreSQL. This pipeline application serves metrics and aggregations for the Reporting and Analytic function
+            within the SpokGo cloud platform.
+          </p>
+          <ul>
+            <li>Developed a hybrid data paradigm following <a href="https://medium.com/@maximebeauchemin/functional-data-engineering-a-modern-paradigm-for-batch-data-processing-2327ec32c42a">Functional Data Engineering</a> of immutable objects and 
+              a bottom-up design as in Ralph Kimball’s dimensional design approach</li>
+            <li>Created a simple data event contract allowing the many microservices of SpokGo a flexible structure for event publishing</li>
+            <li>Developed a streaming data architecture utilizing Kinesis and Glue to persist application events in S3 using parquet files</li>
+            <li>Used SNS and SQS to act on S3 events to invoke a python lambda function using Pandas to minimally transform and flush into PostgreSQL</li>
+            <li>Developed Docker/Fargate containers to run Flyway and DBT processes and used AWS Step Functions to orchestrate execution</li>
+          </ul>
+        </div>
+
+        <div class="jobdesc">
           <span class="jobtitle">Lead Software Engineer, Back-end</span>
           <span class="employer">
             <a href="http://regiscorp.com">Regis Corporation</a>
           </span>
-          <div class="jobdates">August 2018 — </div>
+          <div class="jobdates">August 2018 — July 2019</div>
         </div>
 
         <div class="jobdetails">
-            <p>
-              A mulitple role position performing the functions of an Architect, Lead Engineer, Product Owner and Engineering Manager.
-            </p>
-            <p>
-              <b>Architect</b>: Designed and implemented a salon management product named Athena. The product is to replace an existing POS platform with a modern Android-based solution and provide cloud business management functions such as scheduling, financial reporting and business forecasting for salon managers and franchise owners via GraphQL and ReactJS.
-            </p>
-            <ul>
-                <li>A Multi-tenant, shared everything, serverless architecture</li>
-                <li>All AWS solution using Lambda, AppSync (GraphQL), Cognito (Auth), DynamoDB, NodeJs and python</li>
-                <li>Streaming, near real-time BI architecture utilizing DynamoDB triggers, Kinesis Streams, Lambda and Aurora Serverless RDMS</li>
-                <li>DevOps deployment into environments using CI/CD, bash scripting and CloudFormation</li>
-                <li>Android SDKs, written in Java 8 Android API 24, performed functions such as tax calculations, rules for pricing and discount that facilitated POS terminals to operate in an <a href="https://en.wikipedia.org/wiki/Occasionally_connected_computing">occasionally connected</a> environment</li>
-            </ul>
-            <p>
-              <b>Lead Engineer</b>: Hands-on coding, accepting and completing tasks, performing code reviews and leading a team of three engineers providing additional work guidance and defining success criteria
-            </p>
-            <p>
-              <b>Product Owner</b>: Working in a highly communicative environment with the product manager where together we create, maintain, and prioritize the product backlog, create actionable user stories for the development team, participate in daily scrum meetings, accept the finished user stories to make sure the work meets the criteria
-            </p>
-            <p>
-              <b>Engineering Manager</b>: Established a sharing and positive workplace culture where we instilled mentorship and valued collaboration that fulfilled:
-            </p>
-            <ul>
-              <li>Play: engineers work because they enjoy it</li>
-              <li>Purpose: engineers work because they value the direct outcome</li>
-              <li>Potential: engineers work because it enhances their potential</li>
-            </ul>
+          <p>
+            A mulitple role position performing the functions of an Architect, Lead Engineer, Product Owner and
+            Engineering Manager.
+          </p>
+          <p>
+            <b>Architect</b>: Designed and implemented a salon management product named Athena. The product is to
+            replace an existing POS platform with a modern Android-based solution and provide cloud business management
+            functions such as scheduling, financial reporting and business forecasting for salon managers and franchise
+            owners via GraphQL and ReactJS.
+          </p>
+          <ul>
+            <li>A Multi-tenant, shared everything, serverless architecture</li>
+            <li>All AWS solution using Lambda, AppSync (GraphQL), Cognito (Auth), DynamoDB, NodeJs and python</li>
+            <li>Streaming, near real-time BI architecture utilizing DynamoDB triggers, Kinesis Streams, Lambda and
+              Aurora Serverless RDMS</li>
+            <li>DevOps deployment into environments using CI/CD, bash scripting and CloudFormation</li>
+            <li>Android SDKs, written in Java 8 Android API 24, performed functions such as tax calculations, rules for
+              pricing and discount that facilitated POS terminals to operate in an <a
+                href="https://en.wikipedia.org/wiki/Occasionally_connected_computing">occasionally connected</a>
+              environment</li>
+          </ul>
+          <p>
+            <b>Lead Engineer</b>: Hands-on coding, accepting and completing tasks, performing code reviews and leading a
+            team of three engineers providing additional work guidance and defining success criteria
+          </p>
+          <p>
+            <b>Product Owner</b>: Working in a highly communicative environment with the product manager where together
+            we create, maintain, and prioritize the product backlog, create actionable user stories for the development
+            team, participate in daily scrum meetings, accept the finished user stories to make sure the work meets the
+            criteria
+          </p>
+          <p>
+            <b>Engineering Manager</b>: Established a sharing and positive workplace culture where we instilled
+            mentorship and valued collaboration that fulfilled:
+          </p>
+          <ul>
+            <li>Play: engineers work because they enjoy it</li>
+            <li>Purpose: engineers work because they value the direct outcome</li>
+            <li>Potential: engineers work because it enhances their potential</li>
+          </ul>
         </div>
 
         <div class="jobdesc">
@@ -200,56 +245,70 @@
         </div>
 
         <div class="jobdetails">
-            <p>
-              <em>Sr. Director of Engineering (interim), <a href="http://www.startups.target.com">New Ventures and Accelerators</a></em>
-            </p>
-            <ul>
-              <li>Reported to Vice President of New Ventures and Accelerators</li>
-              <li>Responsible for 10 direct reports; staffing of resources into the new venture work streams</li>
-              <li>Provided technical leadership and guidance on the venture portfolio</li>
-            </ul>
+          <p>
+            <em>Sr. Director of Engineering (interim), <a href="http://www.startups.target.com">New Ventures and
+                Accelerators</a></em>
+          </p>
+          <ul>
+            <li>Reported to Vice President of New Ventures and Accelerators</li>
+            <li>Responsible for 10 direct reports; staffing of resources into the new venture work streams</li>
+            <li>Provided technical leadership and guidance on the venture portfolio</li>
+          </ul>
         </div>
-  
+
         <div class="jobdetails">
           <p>
-            <em>IoT Device and Auto-replenishment strategy; <a href="http://www.startups.target.com">New Ventures and Accelerators</a></em>. The team known as
-            <a
-              href="https://www.indiegogo.com/projects/target-fetch-auto-replenish-your-home-essentials#/">Fetch</a>, have built a strategy and product consisting of two major pieces. The IoT devices with connectivity via bluetooth and an accompanying Android App
-            <em>(hardware)</em> and the cloud platform with Rest APIs and a wrapping SDK to support management of devices, ingestion of telemetry, consumable
+            <em>IoT Device and Auto-replenishment strategy; <a href="http://www.startups.target.com">New Ventures and
+                Accelerators</a></em>. The team known as
+            <a href="https://www.indiegogo.com/projects/target-fetch-auto-replenish-your-home-essentials#/">Fetch</a>,
+            have built a strategy and product consisting of two major pieces. The IoT devices with connectivity via
+            bluetooth and an accompanying Android App
+            <em>(hardware)</em> and the cloud platform with Rest APIs and a wrapping SDK to support management of
+            devices, ingestion of telemetry, consumable
             prediction and replenishment capabilities
             <em>(software)</em>.
           </p>
           <ul>
-            <li>Responsible for the architecture, design, implementation and support for both the Fetch 1st Party devices
-              as well as 3rd Party integrations on the software platform. This platform resembled a microservices architecture
-              leveraging NodeJS, MongoDB, Redis and Docker-Compose and hosted on VMs in Azure and continuous delivery supported
+            <li>Responsible for the architecture, design, implementation and support for both the Fetch 1st Party
+              devices
+              as well as 3rd Party integrations on the software platform. This platform resembled a microservices
+              architecture
+              leveraging NodeJS, MongoDB, Redis and Docker-Compose and hosted on VMs in Azure and continuous delivery
+              supported
               by CircleCI.</li>
-            <li>The Fetch Product team is composed of a Product Owner, Business Architect, UX Designer and myself. My role responsibilities
-              within the product team is to provide technical leadership and guidance as we design business objectives with
+            <li>The Fetch Product team is composed of a Product Owner, Business Architect, UX Designer and myself. My
+              role responsibilities
+              within the product team is to provide technical leadership and guidance as we design business objectives
+              with
               expected outcomes and criterion to support
               <a href="https://en.wikipedia.org/wiki/Test_and_learn">Test and Learn</a>.</li>
           </ul>
         </div>
 
         <div class="jobdetails">
-            <p>
-              <em>Friction-less Shopping; Smart Cart - Object Detection</em>. A cross-functional, part-time team that iterated on functional prototypes of grab and go shopping experiences.  This iteration outfitted a current Target shopping cart with:
-            </p>
-            <ul>
-              <li>Gesture sensors wired to an Arduino</li>
-              <li>A 5.0 MP global shutter camera via USB to an ODroid</li>
-              <li>A python application stack leveraging async and priority queues</li>
-              <li>OpenCV 3.0 for image capture and TensorFlow for image classification</li>
-              <li>Bluetooth push of of data from a Raspberry Pi to our prototype iOS Swift App</li>
-              <li>Patent application filed and available upon request</li>
-            </ul>
+          <p>
+            <em>Friction-less Shopping; Smart Cart - Object Detection</em>. A cross-functional, part-time team that
+            iterated on functional prototypes of grab and go shopping experiences. This iteration outfitted a current
+            Target shopping cart with:
+          </p>
+          <ul>
+            <li>Gesture sensors wired to an Arduino</li>
+            <li>A 5.0 MP global shutter camera via USB to an ODroid</li>
+            <li>A python application stack leveraging async and priority queues</li>
+            <li>OpenCV 3.0 for image capture and TensorFlow for image classification</li>
+            <li>Bluetooth push of of data from a Raspberry Pi to our prototype iOS Swift App</li>
+            <li>Patent application filed and available upon request</li>
+          </ul>
         </div>
-  
+
         <div class="jobdetails">
           <p>
-            <em>Target Concept Store</em>. Our mission was to create a working, large format Target store for which we could
-            run many different retail experiments, with the intention of scrapping or scaling the ideas to the chain. The
-            concept store experience featured zero-inventory, app-based shopping, person, product and device tracking, curbside
+            <em>Target Concept Store</em>. Our mission was to create a working, large format Target store for which we
+            could
+            run many different retail experiments, with the intention of scrapping or scaling the ideas to the chain.
+            The
+            concept store experience featured zero-inventory, app-based shopping, person, product and device tracking,
+            curbside
             pickup and cloud-first software deployment strategy.
             <sub>(nda)</sub>
           </p>
@@ -257,32 +316,40 @@
 
         <div class="jobdetails">
           <p>
-            <em>Enterprise Growth Initiatives</em>. We were charged with creating and building large strategic businesses with
-            the intent of diversifying the retail portfolio of Target. Starting with ideas, we were able to build prototype
+            <em>Enterprise Growth Initiatives</em>. We were charged with creating and building large strategic
+            businesses with
+            the intent of diversifying the retail portfolio of Target. Starting with ideas, we were able to build
+            prototype
             applications, derive a market strategy and create a business execution plan.
             <sub>(nda)</sub>
           </p>
           <ul>
-            <li>Project Bloom - An opportunity in partnership with a worldwide entertainment company to provide a groceries essential
+            <li>Project Bloom - An opportunity in partnership with a worldwide entertainment company to provide a
+              groceries essential
               delivery service at extended stay vacation resorts.</li>
-            <li>Target for Business - An initiative to provide a very large assortment of office products and services for Target
+            <li>Target for Business - An initiative to provide a very large assortment of office products and services
+              for Target
               corporate customers.</li>
           </ul>
         </div>
         <div class="jobdetails">
           <p>
-            <em>Target RAD</em>. The RAD team functioned as an agency-like team within Target, where incubating business ideas
+            <em>Target RAD</em>. The RAD team functioned as an agency-like team within Target, where incubating business
+            ideas
             and building products within a few iterations. The concepts that we value most are put into our manifesto,
-            <a
-              href="https://github.com/TargetRAD/manifesto">The Make, Share and Collaborate Manifesto</a>.</p>
+            <a href="https://github.com/TargetRAD/manifesto">The Make, Share and Collaborate Manifesto</a>.</p>
           <ul>
             <li>
-              <a href="http://school.target.com">School List Assist</a> - was curated site for parents in the Sacramento, Calif. area to create lists and purchase
-              school supplies. This site was a multi-tiered custom single-page webapp using NodeJS, Restify, MongoDB, Redis,
+              <a href="http://school.target.com">School List Assist</a> - was curated site for parents in the
+              Sacramento, Calif. area to create lists and purchase
+              school supplies. This site was a multi-tiered custom single-page webapp using NodeJS, Restify, MongoDB,
+              Redis,
               Express and hosted on Heroku.</li>
             <li>
-              <a href="http://awesomeshop.target.com">Target Awesomeshop</a> - was a custom single-page webapp delivered using NodeJS and Express with MongoDB. We
-              scaled Awesomeshop to sustain a load of 100 TPS on Heroku, utilizing Nginx as a forwarding-caching proxy. This
+              <a href="http://awesomeshop.target.com">Target Awesomeshop</a> - was a custom single-page webapp delivered
+              using NodeJS and Express with MongoDB. We
+              scaled Awesomeshop to sustain a load of 100 TPS on Heroku, utilizing Nginx as a forwarding-caching proxy.
+              This
               proxy required us to build a
               <a href="https://github.com/TGTLabs/nginx-buildpack">custom buildpack</a> for Heroku.</li>
           </ul>
@@ -297,14 +364,19 @@
         </div>
         <div class="jobdetails">
           <p>A member of the Transformers team within the
-            <em>Platform Transformation</em> project that brought BestBuy.com from a self-hosted, proprietary ATG commerce system
+            <em>Platform Transformation</em> project that brought BestBuy.com from a self-hosted, proprietary ATG
+            commerce system
             to an open-sourced platform hosted in EC2 and Rackspace.</p>
           <ul>
-            <li>Delivered the Aggregator, a system that aggregates data from several source systems into a single system delivering
-              JSON documents consumed by the presentation tier. The aggregator was written in Groovy and initially delivered
+            <li>Delivered the Aggregator, a system that aggregates data from several source systems into a single system
+              delivering
+              JSON documents consumed by the presentation tier. The aggregator was written in Groovy and initially
+              delivered
               for Holiday 2012 on the Resource-Oriented computing platform, Netkernel.</li>
-            <li>For Holiday 2013, the aggregator was rewritten using functional-style Groovy to an Apache/Spring/Tomcat utilizing
-              Memcached, GPars and JAX-RS (Jersey). The new aggregator can handle 300% more traffic and the 99th percentile
+            <li>For Holiday 2013, the aggregator was rewritten using functional-style Groovy to an Apache/Spring/Tomcat
+              utilizing
+              Memcached, GPars and JAX-RS (Jersey). The new aggregator can handle 300% more traffic and the 99th
+              percentile
               response time was reduced to less than 200ms.</li>
           </ul>
         </div>
@@ -318,13 +390,17 @@
         </div>
         <div class="jobdetails">
           <p>A member of the
-            <em>Datasite 7</em> development team, charged with a complete rewrite of the VDR system. A change of platform from
+            <em>Datasite 7</em> development team, charged with a complete rewrite of the VDR system. A change of
+            platform from
             a traditional Spring-Hibernate and JSF to Alfresco CMS and ExtJS.</p>
           <ul>
-            <li>Designed and began implementation on the next release of Datasite application architecture using Spring frameworks
-              such as Data, MVC, Integration and leveraging an all Oracle storage platform using SecureFS, TotalRecall, Full-text
+            <li>Designed and began implementation on the next release of Datasite application architecture using Spring
+              frameworks
+              such as Data, MVC, Integration and leveraging an all Oracle storage platform using SecureFS, TotalRecall,
+              Full-text
               search, Advanced Compression, and Advanced Encryption.</li>
-            <li>Performance tuned over 100 poorly written SQL queries; highlights include a 2000x performance gain using a PIVOT
+            <li>Performance tuned over 100 poorly written SQL queries; highlights include a 2000x performance gain using
+              a PIVOT
               and over 100x gain using CONNECT BY.</li>
           </ul>
         </div>
@@ -337,14 +413,19 @@
           <div class="jobdates">Februrary 2009 — October 2010</div>
         </div>
         <div class="jobdetails">
-          <p>Responsible for technical design and implementation of strategic Lifetouch applications, focused around eCommerce
-            solutions. Although not an Agile organization, my teams and participants focused on TDD, Continuous Integration,
-            daily stand ups, story-writing and tasks estimation, iterations and retrospectives. Often managing several parallel
+          <p>Responsible for technical design and implementation of strategic Lifetouch applications, focused around
+            eCommerce
+            solutions. Although not an Agile organization, my teams and participants focused on TDD, Continuous
+            Integration,
+            daily stand ups, story-writing and tasks estimation, iterations and retrospectives. Often managing several
+            parallel
             development teams and applications including off-shore resources.</p>
           <ul>
             <li>Designed, developed and deployed three seasonal releases of
-              <a href="http://my.lifetouch.com">My Lifetouch</a> – An ordering site for parents to prepay for their child's school photo. A greenfield application
-              was written using JSF-MyFaces+Facelets, RichFaces, Hibernate, Quartz, and JMS. Lead and mentored the team of
+              <a href="http://my.lifetouch.com">My Lifetouch</a> – An ordering site for parents to prepay for their
+              child's school photo. A greenfield application
+              was written using JSF-MyFaces+Facelets, RichFaces, Hibernate, Quartz, and JMS. Lead and mentored the team
+              of
               5 engineers, some of whom this was their first Java Web project.</li>
             <li>A member of the Lifetouch committee on PCI-DSS evaluation and compliance</li>
           </ul>
@@ -358,15 +439,20 @@
           <div class="jobdates">February 2007 — February 2009</div>
         </div>
         <div class="jobdetails">
-          <p>Business continuance of Information Bionics, Inc. (2002), achieved via capital investment. We rewrote the database
-            engine in Java, utilizing Berkeley DB Java Edition. We added a HTML-based administration console, an MBean interface
-            and a client-server JDBC-like API. The development model was a cross between SCRUM and XP, leaning heavily on
+          <p>Business continuance of Information Bionics, Inc. (2002), achieved via capital investment. We rewrote the
+            database
+            engine in Java, utilizing Berkeley DB Java Edition. We added a HTML-based administration console, an MBean
+            interface
+            and a client-server JDBC-like API. The development model was a cross between SCRUM and XP, leaning heavily
+            on
             pair-programming, test-first development and daily stand ups.</p>
           <ul>
-            <li>Designed and developed all core engine components, such as Syntax and Semantic Evaluation, Target List processing,
+            <li>Designed and developed all core engine components, such as Syntax and Semantic Evaluation, Target List
+              processing,
               Query Planning, Statement Execution, Result Set processing and User Session Management.</li>
             <li>Implemented JDBC-like client-server driver using Apache Mina network API and state machine.</li>
-            <li>Implemented language parsing with ANTLR, in which C-SQL was closely modeled after SQL-2006 in Backus–Naur form.</li>
+            <li>Implemented language parsing with ANTLR, in which C-SQL was closely modeled after SQL-2006 in
+              Backus–Naur form.</li>
           </ul>
         </div>
 
@@ -379,9 +465,12 @@
         </div>
         <div class="jobdetails">
           <p>A member of the
-            <em>FLIS (Fedline Advantage Information Systems)</em> development team for the ACH division. This application enabled
-            small to medium-size banks to report and manage their ACH transactions over a secure web connection. FLIS was
-            a n-tier application utilizing 2-node clustered Websphere 6.0 with database connections to both Oracle and Mainframe
+            <em>FLIS (Fedline Advantage Information Systems)</em> development team for the ACH division. This
+            application enabled
+            small to medium-size banks to report and manage their ACH transactions over a secure web connection. FLIS
+            was
+            a n-tier application utilizing 2-node clustered Websphere 6.0 with database connections to both Oracle and
+            Mainframe
             DB2 and the standard MVC with Struts/Tiles.</p>
           <ul>
             <li>Participated in query performance analysis and coordinated over 2000 query rewrites</li>
@@ -395,9 +484,12 @@
           <div class="jobdates">September 2003 — August 2005</div>
         </div>
         <div class="jobdetails">
-          <p>Co-founder of Attempt4, a software start-up company founded in 2003. We were building a structured search engine
-            for relational databases called DataExplorer, modeled after popular web and enterprise search engines. Primary
-            responsibilities include full software development life cycle management of DataExplorer, development team leader
+          <p>Co-founder of Attempt4, a software start-up company founded in 2003. We were building a structured search
+            engine
+            for relational databases called DataExplorer, modeled after popular web and enterprise search engines.
+            Primary
+            responsibilities include full software development life cycle management of DataExplorer, development team
+            leader
             and coach, providing application demonstrations, and investor relations.</p>
         </div>
 
@@ -407,13 +499,19 @@
           <div class="jobdates">March 2002 — September 2003</div>
         </div>
         <div class="jobdetails">
-          <p>Chief architect of Cross2java™, a migration tool for AS/400 RPG-based applications to a J2EE platform. The output
-            of Cross2java™ was a classic n-tiered application with business logic deployed using EJB's with the UI in XHTML
+          <p>Chief architect of Cross2java™, a migration tool for AS/400 RPG-based applications to a J2EE platform. The
+            output
+            of Cross2java™ was a classic n-tiered application with business logic deployed using EJB's with the UI in
+            XHTML
             transformed from XML/XSLT sources. Responsibilities included producing and maintaining adherence to software
-            specifications, research and evaluation of commercial RPG-to-Java translators, development and maintenance of
-            software migration project plans, managing and providing technical leadership for a product support team of five
-            persons. Provided functional and regression testing, and patch and release management for Crossworks’ multi-platform
-            legacy extension software products. Reported project status to the President, Board of Directors and principal
+            specifications, research and evaluation of commercial RPG-to-Java translators, development and maintenance
+            of
+            software migration project plans, managing and providing technical leadership for a product support team of
+            five
+            persons. Provided functional and regression testing, and patch and release management for Crossworks’
+            multi-platform
+            legacy extension software products. Reported project status to the President, Board of Directors and
+            principal
             investors.</p>
         </div>
 
@@ -423,12 +521,18 @@
           <div class="jobdates">June 2000 — September 2002</div>
         </div>
         <div class="jobdetails">
-          <p>Participated in the architecture and development for a start-up company, tasked to build a next- generation database
-            on the Windows platform. This new database represented a decomposed storage model utilizing value pools, multiple
-            attribute values, and non-data dependent relationships. Primary responsibilities included formulating and maintaining
-            programming guidelines and standards, advising mid and junior level programmers regarding multi-threaded techniques,
-            multi-platform portability, object-oriented design principles, and usages of industry standard components. Developed
-            and maintained project development plans and reported project status to the Board of Directors and prospective
+          <p>Participated in the architecture and development for a start-up company, tasked to build a next- generation
+            database
+            on the Windows platform. This new database represented a decomposed storage model utilizing value pools,
+            multiple
+            attribute values, and non-data dependent relationships. Primary responsibilities included formulating and
+            maintaining
+            programming guidelines and standards, advising mid and junior level programmers regarding multi-threaded
+            techniques,
+            multi-platform portability, object-oriented design principles, and usages of industry standard components.
+            Developed
+            and maintained project development plans and reported project status to the Board of Directors and
+            prospective
             investors.</p>
         </div>
 
@@ -441,9 +545,12 @@
         </div>
         <div class="jobdetails">
           <p>A member of the
-            <em>Lynx</em> project for the Cargill Grain Division. Our team succeeded in creating a tool for converting Sybase
-            procedures and schema to Oracle. Additionally, our team also created a distributable, multi-threaded solution
-            to replicate data across multiple Oracle databases. Responsibilities included defining and designing system architecture,
+            <em>Lynx</em> project for the Cargill Grain Division. Our team succeeded in creating a tool for converting
+            Sybase
+            procedures and schema to Oracle. Additionally, our team also created a distributable, multi-threaded
+            solution
+            to replicate data across multiple Oracle databases. Responsibilities included defining and designing system
+            architecture,
             gathering and documenting system requirements, and performing code reviews for junior developers.</p>
         </div>
 
@@ -455,9 +562,12 @@
           <div class="jobdates">Februrary 1997 — April 1998</div>
         </div>
         <div class="jobdetails">
-          <p>Assumed project leadership of the Executive Information System (EIS), a management reporting tool designed to deliver
-            aggregated data to regional and divisional sales managers, build using Progress 4GL technology. Project manager
-            and leader of the four person EIS development team. Responsible for formulating and assigning programming requirements
+          <p>Assumed project leadership of the Executive Information System (EIS), a management reporting tool designed
+            to deliver
+            aggregated data to regional and divisional sales managers, build using Progress 4GL technology. Project
+            manager
+            and leader of the four person EIS development team. Responsible for formulating and assigning programming
+            requirements
             to EIS developers, working with executives to gather feedback and make improvements to the EIS system.</p>
         </div>
 
@@ -467,7 +577,8 @@
           <div class="jobdates">April 1994 — Februrary 1997</div>
         </div>
         <div class="jobdetails">
-          <p>Administrator of Titan, a CRM, accounting, order processing and inventory management system in use by over 100
+          <p>Administrator of Titan, a CRM, accounting, order processing and inventory management system in use by over
+            100
             employees in two countries.</p>
         </div>
       </div>
@@ -484,25 +595,25 @@
         <ul>
           <li>Proficient in:
             <ul>
-              <li>Javascript, Java, Shell, SQL, Python</li>
-              <li>DynamoDB, Aurora MySQL</li>
-              <li>AvaJS, CircleCI, JUnit</li>
+              <li>Python, SQL, Javascript, Java, Shell</li>
+              <li>PostgresSQL, DynamoDB, MySQL</li>
+              <li>pyTest, Jenkins, AvaJS, CircleCI, JUnit</li>
               <li>VSCode, Atom, AndroidStudio, Intellij, vi</li>
               <li>AWS, Azure, Heroku</li>
-              <li>Github, Bitbucket</li>
+              <li>Docker, Github, Bitbucket</li>
             </ul>
           </li>
           <li>Familiar with:
             <ul>
-              <li>Scala, Swift, Go, Erlang</li>
-              <li>MongoDB, Oracle, Azure SQL, Azure DocumentDB, Postgres SQL</li>
+              <li>Go, Scala, Swift, C++</li>
+              <li>MongoDB, Oracle, DocumentDB</li>
               <li>NodeJS, Tomcat, JVM, Nginx</li>
-              <li>Docker, Docker Swarm, Docker Compose</li>
+              <li>Docker Swarm, Docker Compose, Kubernetes</li>
               <li>Prometheus, Logstash, Papertrail, Elastic Search</li>
-              <li>Mocha, Chai, Tape, Codeship, Jenkins</li>
+              <li>Mocha, Chai, Tape, Codeship</li>
               <li>Arduino, Raspberry PI</li>
               <li>Graphite, Graphana, ELK</li>
-              <li>RethinkDB, CouchBase, MySQL, InfluxDB</li>
+              <li>Neo4j, CouchBase, InfluxDB</li>
             </ul>
           </li>
         </ul>
@@ -514,7 +625,7 @@
       <div class="sectiontitle">Education</div>
       <div class="sectionbody">
         <a href="http://www.memphis.edu">University of Memphis</a>
-        <br/>
+        <br />
         <a href="http://www.sanfordbrown.edu">Brown College</a>
       </div>
     </div>
@@ -525,8 +636,9 @@
         Personal Projects and Awards
       </div>
       <div class="sectionbody">
-        <a href="https://hockeyshots-ccha.firebaseapp.com">Girls Hockey App</a> for my girls hockey team to record shots and see the biweekly leaderboard
-        <br/> <em>Gulf War Veteran</em>. Awarded Bronze Star for actions during combat.
+        <a href="https://hockeyshots-ccha.firebaseapp.com">Girls Hockey App</a> for my girls hockey team to record shots
+        and see the biweekly leaderboard
+        <br /> <em>Gulf War Veteran</em>. Awarded Bronze Star for actions during combat.
       </div>
     </div>
 
