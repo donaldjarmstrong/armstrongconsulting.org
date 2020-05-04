@@ -1,10 +1,10 @@
 {
   "name": "armstrongconsulting.org",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Website for armstrong consulting",
   "main": "index.js",
   "engines": {
-    "node": "10.15.3"
+    "node": "14.11.0"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
