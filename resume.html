@@ -161,27 +161,71 @@
 
       <div class="sectionbody">
         <div class="jobdesc">
+          <span class="jobtitle">Director Data and Analytics Engineering</span>
+          <span class="employer">
+            <a href="https://www.bremer.com">Bremer Bank</a>
+          </span>
+          <div class="jobdates">July 2020 -</div>
+        </div>
+
+        <div class="jobdetails">
+          <p>
+             Responsibilities:
+          </p>
+          <ul>
+            <li>Leading and driving the organizational strategy and execution of the cloud data platform for ingesting, staging, reporting and analytics (AI/ML)</li>
+            <li>Designing/Creating/Maintaining the architecture around the cloud data platform which involves securing, streaming, pooling, storing, and handling of data</li>
+            <li>Actively participating and driving decisioning around the capabilities, security, design, etc. around data products and services</li>
+            <li>Driving the creation of a platform for data analytics and tools to support active business intelligence, data usability, availability, and efficiency</li>
+            <li>Build and Lead the teams responsible for Bremer's delivery of data products and services</li>
+            <li>Own technical operations of products and services build by the data teams; collaborate on developing SLAs and SLOs and then achieve</li>
+            <li>Collaborate with leadership on strategic planning and business objectives</li>
+            <li>Drive a delivery-oriented culture</li>
+          </ul>
+
+          <p>
+            <b>Lead Cloud Data Engineer</b>:
+            <ul>
+              <li>Designed and implemented a data-lake on S3; governed by Lake Formation and ad-hoc accessible with Athena</li>
+              <li>Built a data pipeline framework utilizing serverless AWS Glue (pyspark) and orchestrated via Step Functions that delivered data to S3, Redshift and Kinesis streams</li>
+              <li>Built an active alerting archicture using EventBridge, Kinesis, Lambda to deliver events in near-realtime to Slack and PagerDuty</li>
+              <li>Designed and implemented a streaming system using Python, Avro and Kinesis that followed 2 patterns; async task execution and event sourcing</li>
+              <li>Built and scaled an Elasticsearch cluster to aggregate logs across mulitple AWS accounts with data fed exclusively via Kinesis Streams and Lamnda (python)</li>
+              <li>Utilized <a href="https://www.getdbt.com/">dbt</a> to perform ELT functions and deliver 'golden' data models within Redshift</li>
+            </ul>
+          </p>
+        </div>
+
+        <div class="jobdesc">
           <span class="jobtitle">Senior Data Engineer</span>
           <span class="employer">
             <a href="https://www.spok.com/solutions/">Spok</a>
           </span>
-          <div class="jobdates">July 2019 — </div>
+          <div class="jobdates">July 2019 — July 2020 </div>
         </div>
 
         <div class="jobdetails">
           <p>
             Developed a streaming data pipeline application using Python and SQL (<a
-              href="https://www.getdbt.com/">dbt</a>). The application is deployed to AWS utilizing Lambda, Kinesis, Glue,
-            Fargate and Aurora PostgreSQL. This pipeline application serves metrics and aggregations for the Reporting and Analytic function
+              href="https://www.getdbt.com/">dbt</a>). The application is deployed to AWS utilizing Lambda, Kinesis,
+            Glue,
+            Fargate and Aurora PostgreSQL. This pipeline application serves metrics and aggregations for the Reporting
+            and Analytic function
             within the SpokGo cloud platform.
           </p>
           <ul>
-            <li>Developed a hybrid data paradigm following <a href="https://medium.com/@maximebeauchemin/functional-data-engineering-a-modern-paradigm-for-batch-data-processing-2327ec32c42a">Functional Data Engineering</a> of immutable objects and 
+            <li>Developed a hybrid data paradigm following <a
+                href="https://medium.com/@maximebeauchemin/functional-data-engineering-a-modern-paradigm-for-batch-data-processing-2327ec32c42a">Functional
+                Data Engineering</a> of immutable objects and
               a bottom-up design as in Ralph Kimball’s dimensional design approach</li>
-            <li>Created a simple data event contract allowing the many microservices of SpokGo a flexible structure for event publishing</li>
-            <li>Developed a streaming data architecture utilizing Kinesis and Glue to persist application events in S3 using parquet files</li>
-            <li>Used SNS and SQS to act on S3 events to invoke a python lambda function using Pandas to minimally transform and flush into PostgreSQL</li>
-            <li>Developed Docker/Fargate containers to run Flyway and DBT processes and used AWS Step Functions to orchestrate execution</li>
+            <li>Created a simple data event contract allowing the many microservices of SpokGo a flexible structure for
+              event publishing</li>
+            <li>Developed a streaming data architecture utilizing Kinesis and Glue to persist application events in S3
+              using parquet files</li>
+            <li>Used SNS and SQS to act on S3 events to invoke a python lambda function using Pandas to minimally
+              transform and flush into PostgreSQL</li>
+            <li>Developed Docker/Fargate containers to run Flyway and DBT processes and used AWS Step Functions to
+              orchestrate execution</li>
           </ul>
         </div>
 
@@ -281,7 +325,8 @@
               within the product team is to provide technical leadership and guidance as we design business objectives
               with
               expected outcomes and criterion to support
-              <a href="https://en.wikipedia.org/wiki/Test_and_learn">Test and Learn</a>.</li>
+              <a href="https://en.wikipedia.org/wiki/Test_and_learn">Test and Learn</a>.
+            </li>
           </ul>
         </div>
 
@@ -337,21 +382,24 @@
             <em>Target RAD</em>. The RAD team functioned as an agency-like team within Target, where incubating business
             ideas
             and building products within a few iterations. The concepts that we value most are put into our manifesto,
-            <a href="https://github.com/TargetRAD/manifesto">The Make, Share and Collaborate Manifesto</a>.</p>
+            <a href="https://github.com/TargetRAD/manifesto">The Make, Share and Collaborate Manifesto</a>.
+          </p>
           <ul>
             <li>
               <a href="http://school.target.com">School List Assist</a> - was curated site for parents in the
               Sacramento, Calif. area to create lists and purchase
               school supplies. This site was a multi-tiered custom single-page webapp using NodeJS, Restify, MongoDB,
               Redis,
-              Express and hosted on Heroku.</li>
+              Express and hosted on Heroku.
+            </li>
             <li>
               <a href="http://awesomeshop.target.com">Target Awesomeshop</a> - was a custom single-page webapp delivered
               using NodeJS and Express with MongoDB. We
               scaled Awesomeshop to sustain a load of 100 TPS on Heroku, utilizing Nginx as a forwarding-caching proxy.
               This
               proxy required us to build a
-              <a href="https://github.com/TGTLabs/nginx-buildpack">custom buildpack</a> for Heroku.</li>
+              <a href="https://github.com/TGTLabs/nginx-buildpack">custom buildpack</a> for Heroku.
+            </li>
           </ul>
         </div>
 
@@ -366,7 +414,8 @@
           <p>A member of the Transformers team within the
             <em>Platform Transformation</em> project that brought BestBuy.com from a self-hosted, proprietary ATG
             commerce system
-            to an open-sourced platform hosted in EC2 and Rackspace.</p>
+            to an open-sourced platform hosted in EC2 and Rackspace.
+          </p>
           <ul>
             <li>Delivered the Aggregator, a system that aggregates data from several source systems into a single system
               delivering
@@ -392,7 +441,8 @@
           <p>A member of the
             <em>Datasite 7</em> development team, charged with a complete rewrite of the VDR system. A change of
             platform from
-            a traditional Spring-Hibernate and JSF to Alfresco CMS and ExtJS.</p>
+            a traditional Spring-Hibernate and JSF to Alfresco CMS and ExtJS.
+          </p>
           <ul>
             <li>Designed and began implementation on the next release of Datasite application architecture using Spring
               frameworks
@@ -426,7 +476,8 @@
               child's school photo. A greenfield application
               was written using JSF-MyFaces+Facelets, RichFaces, Hibernate, Quartz, and JMS. Lead and mentored the team
               of
-              5 engineers, some of whom this was their first Java Web project.</li>
+              5 engineers, some of whom this was their first Java Web project.
+            </li>
             <li>A member of the Lifetouch committee on PCI-DSS evaluation and compliance</li>
           </ul>
         </div>
@@ -471,7 +522,8 @@
             was
             a n-tier application utilizing 2-node clustered Websphere 6.0 with database connections to both Oracle and
             Mainframe
-            DB2 and the standard MVC with Struts/Tiles.</p>
+            DB2 and the standard MVC with Struts/Tiles.
+          </p>
           <ul>
             <li>Participated in query performance analysis and coordinated over 2000 query rewrites</li>
             <li>Converted html-based styling to CSS, saving almost 10,000 dollars in service fees for FedACH</li>
@@ -551,7 +603,8 @@
             solution
             to replicate data across multiple Oracle databases. Responsibilities included defining and designing system
             architecture,
-            gathering and documenting system requirements, and performing code reviews for junior developers.</p>
+            gathering and documenting system requirements, and performing code reviews for junior developers.
+          </p>
         </div>
 
         <div class="jobdesc">
