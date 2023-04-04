@@ -2,7 +2,6 @@
 
 const path = require('path')
 const fs = require('fs')
-const pkg = require('./package')
 const Koa = require('koa')
 const Router = require('koa-router')
 const serve = require('koa-static')
@@ -55,7 +54,4 @@ app.use(async (ctx, next) => {
   }
 })
 
-const port = process.env.PORT || 3000
-app.listen(port, () => {
-  console.log(`${pkg.name} v${pkg.version} listening on port ${port}`)
-})
+module.exports = app
