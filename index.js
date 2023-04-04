@@ -31,7 +31,7 @@ router.get(['/', '/(index|resume)(.*)'], async function resume (ctx, next) {
 
 router.get('/robots.txt', async function robots (ctx, next) {
   ctx.type = 'text/plain'
-  ctx.body = `User-agent: *\nDisallow: /`
+  ctx.body = 'User-agent: *\nDisallow: /'
 })
 
 app.use(async (ctx, next) => {
