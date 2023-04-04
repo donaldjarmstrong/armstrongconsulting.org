@@ -1,6 +1,6 @@
 {
   "name": "armstrongconsulting.org",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Website for armstrong consulting",
   "main": "index.js",
   "engines": {
